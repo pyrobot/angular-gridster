@@ -814,6 +814,7 @@ angular.module('gridster', [])
 						return;
 					}
 					$el.draggable({
+						containment: gridster.draggable && gridster.draggable.containment ? gridster.draggable.containment : null,
 						handle: gridster.draggable && gridster.draggable.handle ? gridster.draggable.handle : null,
 						refreshPositions: true,
 						start: function(event, widget) {
