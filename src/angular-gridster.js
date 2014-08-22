@@ -817,6 +817,8 @@ angular.module('gridster', [])
 						containment: gridster.draggable && gridster.draggable.containment ? gridster.draggable.containment : null,
 						scroll: gridster.draggable && gridster.draggable.scroll ? gridster.draggable.scroll : null,
 						handle: gridster.draggable && gridster.draggable.handle ? gridster.draggable.handle : null,
+						snap: gridster.draggable && gridster.draggable.snap ? gridster.draggable.snap : null,
+						snapMode: gridster.draggable && gridster.draggable.snapMode ? gridster.draggable.snapMode : null,
 						refreshPositions: true,
 						start: function(event, widget) {
 							$el.addClass('gridster-item-moving');
